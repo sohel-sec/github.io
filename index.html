@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sohel Ahmed - Portfolio</title>
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar styles */
+    nav {
+      background-color: #004080;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      color: white;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    /* Main content styles */
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: #f4f7fb;
+      min-height: calc(100vh - 60px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      color: #004080;
+    }
+
+    .hero h2 {
+      font-size: 1.5rem;
+      color: #333;
+      font-weight: normal;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #666;
+      font-style: italic;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      nav ul {
+        gap: 10px;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero h2 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Sohel Ahmed</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="about">
+    <h1>Sohel Ahmed</h1>
+    <h2>Senior Software Engineer</h2>
+    <p>Divine IT Limited</p>
+  </section>
+
+  <!-- You can add more sections here -->
+  <section id="projects" style="padding: 40px 20px;">
+    <h2>Projects</h2>
+    <p>Coming soon...</p>
+  </section>
+
+  <section id="contact" style="padding: 40px 20px;">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+  </section>
+</body>
+</html>
